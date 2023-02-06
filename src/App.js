@@ -16,7 +16,7 @@ function App() {
     formData.append("vendor", vendor);
     formData.append("file", file);
 
-    const res = await axios.post(`${SERVER_URL}/api/dtaa`, formData);
+    const res = await axios.post(`${SERVER_URL}/api/data`, formData);
     if (res.data.valid === true) {
       alert("Upload successfuly!! This is a valid data!");
     } else {
